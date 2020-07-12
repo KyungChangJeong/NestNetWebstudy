@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>선생님 나빠요</title>
+</head>
+
+<body>
+    <h1>여러가지 form을 사용해보겟소이다</h1>
+    <form>
+        당신의 이름은?(text type) <input type="text" value="gd"> <hr>
+        당신의 나이는?(추가 가능하게) <input type="text" list="age_number">
+        <datalist id="age_number">
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </datalist>
+        <hr>
+        <label for="name">당신의 비밀은(pwd type) <input type="password" name="name" id="name"><hr></label>
+        <label>햄최몇?(숫자만 입력가능, 최소 0, 최대 10)<input type="number" min="0" max="10"><hr></label>
+        <label>부먹 찍먹<br> <input type="radio" name="부먹" value="부먹">부먹<input type="radio"name="찍먹" value="찍먹">찍먹<hr></label>
+        <label><b>퀴즈</b> 
+        input내의 name,id,value의 역할은?(textarea 행 : 6, 열 : 40)
+        <br> <textarea>name은 서버로 전달되는 이름을 말함 / id는 식별자 / value은 초깃값을 명시 </textarea></label>
+        <br><button>Submit</button>
+    </form>
+   
+
+</body>
+
+</html>
